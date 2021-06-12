@@ -3,7 +3,6 @@ import { NgModule, LOCALE_ID } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { DirectivaComponent } from './directiva/directiva.component';
 import { ClientesComponent } from './clientes/clientes.component';
 import { FormComponent } from './clientes/form.component';
 import { PaginatorComponent } from './paginator/paginator.component';
@@ -35,7 +34,6 @@ registerLocaleData(localeES, 'es');
 
 const routes: Routes = [
   { path: '', redirectTo: '/clientes', pathMatch: 'full' },
-  { path: 'directivas', component: DirectivaComponent },
   { path: 'clientes', component: ClientesComponent },
   { path: 'clientes/page/:page', component: ClientesComponent },
   { path: 'clientes/form', component: FormComponent, canActivate: [AuthGuard, RoleGuard], data: { role: 'ROLE_ADMIN' } },
@@ -50,7 +48,6 @@ const routes: Routes = [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    DirectivaComponent,
     ClientesComponent,
     FormComponent,
     PaginatorComponent,
