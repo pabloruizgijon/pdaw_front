@@ -26,7 +26,7 @@ export class DetalleComponent implements OnInit {
   constructor(private clienteService: ClienteService,
     private facturaService: FacturaService,
     private authService: AuthService,
-    private modalService: ModalService) { }
+    public modalService: ModalService) { }
 
   ngOnInit() { }
 

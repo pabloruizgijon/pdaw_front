@@ -5,12 +5,13 @@ import swal from 'sweetalert2';
 
 @Component({
   selector: 'app-header',
-  templateUrl: './header.component.html'
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
   title: string = 'App Angular'
 
-  constructor(private authService: AuthService, private router: Router) { }
+  constructor(public authService: AuthService, private router: Router) { }
   logout(): void {
     let username = this.authService.usuario.username;
     this.authService.logout();

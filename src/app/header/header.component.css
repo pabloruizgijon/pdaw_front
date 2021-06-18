@@ -1,0 +1,24 @@
+.cabecera{
+    background: rgb(31,29,28);
+background: linear-gradient(90deg, rgba(31,29,28,1) 40%, rgba(74,161,255,1) 95%);
+    padding-left: 10%;
+    padding-right: 10%;
+}
+ 
+h3 {
+    font-weight: bold;
+    color: white;
+}
+
+.enlace {
+    text-decoration: none;
+    margin-left: 1.5rem;
+}
+
+.enlace:hover {
+    color: #5CBDEA;
+}
+
+.logo {
+    margin-right: 2rem;
+}
