@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar cabecera text-white">
-  <a class="navbar-brand" href="#"><img src="../../assets/imagenes/clientes-logo.png" alt="" width="100px" height="100px" class="logo"></a>
+  <a class="navbar-brand titulo" href="#"><img src="https://proyecto-final-heroku.herokuapp.com/images/logo.png" alt="" width="100px" height="100px" class="logo">DAW CRM</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -7,11 +7,11 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item" routerLinkActive="active">
-        <a class="nav-linkcd enlace" [routerLink]="['/clientes']"><h3 class="enlace">Clientes</h3></a>
+        <a class="nav-link" [routerLink]="['/clientes']"><h4 class="enlace"><i class="fas fa-users"></i> Listado de clientes</h4></a>
       </li>
     </ul>
     <ul class="navbar-nav navbar-right">
-      <li *ngIf="!authService.isAuthenticated()"><a [routerLink]="['/login']" class="btn btn-light">Iniciar sesión</a></li>
+      <li *ngIf="!authService.isAuthenticated()"><a [routerLink]="['/login']" class="btn btn-outline-light">Iniciar sesión</a></li>
 
       <li *ngIf="authService.isAuthenticated()" class="dropdown">
         <a class="btn btn-outline-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
